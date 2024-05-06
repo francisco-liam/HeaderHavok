@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2633212147797225724}
   m_Layer: 0
   m_Name: Golf_ball_HighPOly
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7676870034936054450}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 51cde497371b6f743ad892ea6cf6a710, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

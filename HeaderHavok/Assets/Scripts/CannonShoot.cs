@@ -8,6 +8,8 @@ public class CannonController : MonoBehaviour
     public float shootForce = 10f;
     public float shootAngle = 45f;
     public float shootInterval = 8f;
+    public AudioSource sound;
+    public GameObject parent;
 
     private void Start()
     {
@@ -22,7 +24,7 @@ public class CannonController : MonoBehaviour
 
             GameObject cannonPrefab = cannonPrefabs[Random.Range(0, cannonPrefabs.Length)];
 
-            GameObject cannon = Instantiate(cannonPrefab, firePoint.position, firePoint.rotation);
+            GameObject cannon = Instantiate(cannonPrefab, firePoint.position, firePoint.rotation, parent.transform);
 
             Rigidbody cannonRigidbody = cannon.GetComponent<Rigidbody>();
 
@@ -30,6 +32,7 @@ public class CannonController : MonoBehaviour
             {
                 Vector3 shootDirection = Quaternion.Euler(-shootAngle, 0, 0) * -firePoint.forward;
                 cannonRigidbody.AddForce(shootDirection * shootForce, ForceMode.Impulse);
+                sound.Play();
             }
             else
             {

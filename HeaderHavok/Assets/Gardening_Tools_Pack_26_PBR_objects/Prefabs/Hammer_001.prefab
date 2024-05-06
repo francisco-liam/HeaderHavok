@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 1191426946946818123}
   m_Layer: 0
   m_Name: Hammer_001
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,7 +232,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1005957155033991973, guid: 698cf0ecda36ac842b13581d3a97e474, type: 3}
 --- !u!54 &1191426946946818123
