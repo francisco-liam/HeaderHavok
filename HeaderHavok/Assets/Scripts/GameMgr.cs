@@ -14,6 +14,8 @@ public class GameMgr : MonoBehaviour
     public float endSoundDuration;
 
     public GameObject startMenu;
+    public GameObject titleMenu;
+    public GameObject instructionsMenu;
 
     public bool running;
 
@@ -50,9 +52,17 @@ public class GameMgr : MonoBehaviour
 
     }
 
+    public void ExitButtonPressed()
+    {
+        Application.Quit();
+    }
+
     IEnumerator StartGame()
     {
         ScoreAndLivesMgr.ResetLivesAndScore();
+        titleMenu.SetActive(false);
+        instructionsMenu.SetActive(true);
+        yield return new WaitForSeconds(5);
         startSoundSource.Play();
         startMenu.SetActive(false);
         yield return new WaitForSeconds(startSoundDuration);
@@ -70,8 +80,10 @@ public class GameMgr : MonoBehaviour
             cannon.shooting = false;
         }
         endSoundSource.Play();
-        yield return new WaitForSeconds(endSoundDuration + 3);
+        yield return new WaitForSeconds(endSoundDuration + 1.5f);
         startMenu.SetActive(true);
+        titleMenu.SetActive(true);
+        instructionsMenu.SetActive(false);
 
     }
 }

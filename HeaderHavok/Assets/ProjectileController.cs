@@ -35,5 +35,6 @@ public class ProjectileController : MonoBehaviour
     IEnumerator DeleteProjectile()
     {
         yield return new WaitForSeconds(5);
+        Object.Destroy(gameObject);
     }
 }
