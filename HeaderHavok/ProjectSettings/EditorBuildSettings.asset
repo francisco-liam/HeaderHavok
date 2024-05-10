@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FennHavok title.unity
-    guid: 7088b84fc2a96e6408446bb79d44b6cb
-  - enabled: 0
-    path: Assets/Scenes/FennHavok.unity
-    guid: c0bd5a48ea67a5548bd4508ed44266b9
-  - enabled: 1
     path: Assets/Scenes/HeaderHavokEnvironment.unity
     guid: c5cd297d35958c84b8c53c8a0d03bd61
   m_configObjects:
