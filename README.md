@@ -20,6 +20,3 @@ High Score: Survive as long as possible! Aim to beat your high score in subseque
 
 ## Known Bugs and Issues
 A player may end the game with -1 lives if two tool objects collide with the player at the same time.
-
-Header Havok offers a fun and engaging way to improve your reflexes and physical coordination. Whether you are looking to enhance your athletic performance or simply have fun in a virtual environment, this game is designed to provide a comprehensive and enjoyable experience.
-Enjoy your time in the game, and remember to stay aware of your surroundings to ensure a safe gaming experience!
